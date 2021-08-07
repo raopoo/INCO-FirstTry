@@ -31,3 +31,31 @@ ul li a{
 .mainLogo{
     text-align: center;
 }
+.containerFooter{
+    background-color: rgb(106,123,139);
+    color: white;
+    clear:both;
+    overflow:auto;
+}
+.footerLogo img{
+    height: 5rem;
+    width: auto;
+    float:left;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+.containerFooter p{
+    text-align: center;
+    font-size:large;
+}
+.containerFooter .mediaLogo{
+    text-align: center;
+}
+.containerFooter .mediaLogo img{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.cafePic{
+   text-align: center;
+   color: white;
+}
