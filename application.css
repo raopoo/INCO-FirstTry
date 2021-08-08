@@ -162,3 +162,59 @@ ul li a{
     padding: 2rem;
     margin: 2rem;
 }
+
+/* CSS for about page */
+.coffeePicTxt{
+    display: flex;
+}
+.coffeePicTxt .coffeeTxt{
+    color: gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align:left;
+    padding: 5rem 2rem;
+    margin: 7rem 4rem;
+}
+.coffeePicTxt .coffeeImg{
+    padding: 4rem;
+    margin: 1rem;
+}
+.cafePicTxt{
+    display: flex;
+}
+.cafePicTxt .cafeTxt{
+    color: gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align:left;
+    padding: 4rem;
+    margin: 1rem;
+   
+}
+.cafePicTxt .cafePic{
+    padding: 4rem;
+    margin: 1rem;
+}
+/* CSS for contact page */
+.afterLogo{
+    text-align: center;
+    padding:0 2rem;
+    margin:0 20rem;
+    color: gray;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.afterLogo p{
+    text-align: left;
+    padding: 2rem;
+    margin: 2rem;
+}
+.maps{
+     text-align: center;
+}
+.maps img{
+    height: 50rem;
+    width: 60rem;
+    padding: 5rem;
+    margin: 2rem;
+}
