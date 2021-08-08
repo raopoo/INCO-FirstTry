@@ -1,12 +1,13 @@
-/* *{transition:all 0.3s ease-in-out;} */
-
+/* Common for all pages */
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 .container{
     background-color: rgb(106,123,139);
-    color: white;
+    color:wheat;
   clear:both;
   overflow:auto;
 }
-
 nav{
     float:right;
 }
@@ -16,16 +17,19 @@ nav{
     padding-left: 3rem;
     padding-top: 0.5rem;
 }
+ul{
+    padding: 1rem;
+  margin-right: 4rem;
+}
 
 ul li{
   display: inline-block; 
-  padding: 1rem 2rem;
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
 }
 ul li a{
     color: white;
+    padding: 1rem 1rem;
+    margin-right: 0.5rem;
 }
 
 .mainLogo{
@@ -55,23 +59,23 @@ ul li a{
     padding: 0.5rem;
     margin: 0.5rem;
 }
+/* CSS for Index */
+
 .cafePic{
    text-align: center;
    color: white;
 }
 .cafePic .cafeName{
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+ }
 .txtBfrCard{
     text-align: center;
     color:grey;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
     padding: 1rem 1rem;
@@ -83,11 +87,11 @@ ul li a{
     
 }
 .threeCards .card{
+    box-shadow: 0 0.5rem 0.5rem 0 darkgrey;
     background-color: grey;
     color:white;
     font-size: 1rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 2rem;
     padding: 2rem;
     text-align: center;
@@ -95,4 +99,66 @@ ul li a{
 .threeCards .card .p{
     padding: 1rem;
     margin: 1rem;
+}
+.btn{
+    border-radius: 1rem;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    height: 2rem;
+    width: 15rem;
+    padding: 2rem;
+    margin: 2rem 45rem;
+    box-shadow: 0 0.5rem 0.5rem 0 darkgrey;
+}
+.btn p{
+    font-size: large;
+    font-weight: bold;
+     margin-top: auto;
+}
+.txtBlBtn{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+    padding: 2rem;
+    margin: 1rem;
+}
+.open{
+    display: flex;
+}
+.open img{
+    padding: 0 3rem 2rem 6rem;
+    margin-bottom: 0 3rem 2rem 6rem;
+}
+.open p{
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: gray;
+}
+.info{
+    display: flex;
+    color: gray;
+    font-size: large;
+}
+.info1 p, .info2 p{
+    text-align: center;
+    padding: 2rem 6rem;
+    margin: 2rem 6rem;
+    font-size:1.5rem;
+}
+.moreInfo{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+
+}
+
+.moreInfo p{
+    padding: 2rem;
+    margin: 2rem;
 }
