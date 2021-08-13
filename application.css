@@ -1,61 +1,80 @@
 /* Common for all pages */
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --ffam : 'Roboto', sans-serif;
+    --bcolor: rgb(106,123,139);
+    --tcolor1: white;
+    --tcolor2: #5C5B5B;
+}
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--ffam);
 }
-.container{
-    background-color: rgb(106,123,139);
-    color:wheat;
-  clear:both;
-  overflow:auto;
-}
+
 nav{
-    float:right;
-}
-
-.logo img{
-    float:left;
-    padding-left: 3rem;
-    padding-top: 0.5rem;
-}
-ul{
+    background-color: var(--bcolor);
+    color:var(--tcolor1);
     padding: 1rem;
-  margin-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* float:right; */
 }
 
-ul li{
-  display: inline-block; 
-  font-size: 1.2rem;
+nav img{
+    width: 10rem;
+    float:left;
+    padding-left: 1rem;
+    padding-top: 0.1rem;
 }
-ul li a{
-    color: white;
+nav ul{
+    padding: 1rem;
+  }
+
+nav ul li{
+  display: inline; 
+  font-size: 1.2rem;
+  margin: 4rem 2rem;
+}
+nav ul li a{
+    color: var(--tcolor1);
     padding: 1rem 1rem;
     margin-right: 0.5rem;
 }
-
 .mainLogo{
     text-align: center;
 }
-.containerFooter{
-    background-color: rgb(106,123,139);
-    color: white;
+.mainLogo img{
+      width: 10rem;
+}
+footer{
+    width: 100%;
+    background-color: var(--bcolor);
+    color: var(--tcolor1);
     clear:both;
     overflow:auto;
+    text-align: center;
 }
-.footerLogo img{
-    height: 5rem;
-    width: auto;
+.footerLogo{
+    /* height: 5rem; */
+    width: 2.5rem;
     float:left;
-    padding-left: 3rem;
-    padding-top: 1rem;
+    /* padding: 2rem 1rem 2rem 3rem; */
+    padding: 1rem;
 }
-.containerFooter p{
+footer p{
+    margin-top: 1.5rem;
     text-align: center;
-    font-size:large;
+    font-size:normal;
 }
-.containerFooter .mediaLogo{
+footer .mediaLogo{
     text-align: center;
 }
-.containerFooter .mediaLogo img{
+footer .mediaLogo img{
+    width: 1.5rem;
     padding: 0.5rem;
     margin: 0.5rem;
 }
@@ -63,7 +82,7 @@ ul li a{
 
 .cafePic{
    text-align: center;
-   color: white;
+   color: var(--tcolor1);
 }
 .cafePic .cafeName{
   position: absolute;
@@ -75,7 +94,7 @@ ul li a{
  }
 .txtBfrCard{
     text-align: center;
-    color:grey;
+    color:var(--tcolor2);
     font-weight: bold;
     font-size: 2.5rem;
     padding: 1rem 1rem;
@@ -88,8 +107,8 @@ ul li a{
 }
 .threeCards .card{
     box-shadow: 0 0.5rem 0.5rem 0 darkgrey;
-    background-color: grey;
-    color:white;
+    background-color: var(--tcolor2);
+    color:var(--tcolor1);
     font-size: 1rem;
     font-weight: bold;
     margin: 2rem;
@@ -103,8 +122,8 @@ ul li a{
 .btn{
     border-radius: 1rem;
     text-align: center;
-    background-color: gray;
-    color: white;
+    background-color: var(--tcolor2);
+    color: var(--tcolor1);
     height: 4rem;
     width: 20rem;
     /* padding: 2rem; */
@@ -120,7 +139,7 @@ ul li a{
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    color: gray;
+    color: var(--tcolor2);
     padding: 2rem;
     margin: 1rem;
 }
@@ -135,11 +154,11 @@ ul li a{
     padding-left: 1rem;
     font-size: 2rem;
     font-weight: bold;
-    color: gray;
+    color: var(--tcolor2);
 }
 .info{
     display: flex;
-    color: gray;
+    color: var(--tcolor2);
     font-size: large;
 }
 .info1 p, .info2 p{
@@ -153,7 +172,7 @@ ul li a{
     padding: 2rem;
     margin: 2rem;
     font-size: 2rem;
-    color: gray;
+    color: var(--tcolor2);
     font-weight: bold;
 
 }
@@ -168,7 +187,7 @@ ul li a{
     display: flex;
 }
 .coffeePicTxt .coffeeTxt{
-    color: gray;
+    color: var(--tcolor2);
     font-size: 1.6rem;
     font-weight: bold;
     text-align:left;
@@ -183,7 +202,7 @@ ul li a{
     display: flex;
 }
 .cafePicTxt .cafeTxt{
-    color: gray;
+    color: var(--tcolor2);
     font-size: 1.6rem;
     font-weight: bold;
     text-align:left;
@@ -200,7 +219,7 @@ ul li a{
     text-align: center;
     padding:0 2rem;
     margin:0 20rem;
-    color: gray;
+    color: var(--tcolor2);
     font-size: 1.8rem;
     font-weight: bold;
 }
