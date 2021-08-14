@@ -202,34 +202,54 @@ footer .mediaLogo img{
 /* CSS for about page */
 .coffeePicTxt{
     display: flex;
-}
-.coffeePicTxt .coffeeTxt{
-    color: var(--tcolor2);
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-align:left;
-    padding: 5rem 2rem;
-    margin: 7rem 4rem;
-}
-.coffeePicTxt .coffeeImg{
-    padding: 4rem;
+    flex-wrap: wrap;
+    padding: 1rem;
     margin: 1rem;
+}
+.coffeeTxt p{
+    color: var(--tcolor2);
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align:left;
+    padding: 2rem 0 1rem 3rem;
+    margin: 2rem 0 1rem 3rem;
+}
+.coffeeTxt p:nth-child(1){
+    word-spacing: 30px;
+    font-size: xx-large;
+    font-weight:bolder;
+}
+.coffeeImg img{
+    height: 50rem;
+    width: 40rem;
+    padding-left: 8rem;
+    margin-left: 8rem;
 }
 .cafePicTxt{
     display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
 }
-.cafePicTxt .cafeTxt{
+.cafePicTxt p{
     color: var(--tcolor2);
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: normal;
     text-align:left;
-    padding: 4rem;
-    margin: 1rem;
+    padding: 1rem 0 1rem 8rem;
+    margin: 1rem 0 1rem 8rem;
    
 }
-.cafePicTxt .cafePic{
-    padding: 4rem;
-    margin: 1rem;
+.cafeTxt p:nth-child(1){
+    word-spacing: 30px;
+    font-size: xx-large;
+    font-weight:bolder;
+}
+.cafePicTxt img{
+    width: 40rem;
+    height: 45rem;
+    padding-left: 3rem;
+    margin-left: 3rem;
 }
 /* CSS for contact page */
 .afterLogo{
@@ -237,20 +257,29 @@ footer .mediaLogo img{
     padding:0 2rem;
     margin:0 20rem;
     color: var(--tcolor2);
-    font-size: 1.8rem;
+  
+}
+.afterLogo h2{
     font-weight: bold;
+    font-size: 1.8rem;
 }
 .afterLogo p{
     text-align: left;
     padding: 2rem;
     margin: 2rem;
+    font-weight: medium;
+    font-size: 1.5rem;
+}
+.afterLogo p:nth-of-type(1) span{
+    font-weight: bold;
 }
 .maps{
      text-align: center;
-}
-.maps img{
-    height: 50rem;
-    width: 60rem;
-    padding: 5rem;
+}   
+     
+.maps iframe{
     margin: 2rem;
-}
+    border: 1px solid black;
+    width: 40rem;
+    height: 30rem;
+   }
