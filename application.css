@@ -36,6 +36,7 @@ nav ul{
 
 nav ul li{
   display: inline; 
+  white-space: nowrap;
   font-size: 1.2rem;
   margin: 4rem 2rem;
 }
@@ -164,13 +165,15 @@ footer .mediaLogo img{
     display: flex;
 }
 .open img{
+    width: 5rem;
+    height: 5rem;
     padding: 0 3rem 2rem 6rem;
     margin-bottom: 0 3rem 2rem 6rem;
 }
 .open p{
     padding-left: 1rem;
     font-size: 2rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: var(--tcolor2);
 }
 .info{
@@ -178,7 +181,11 @@ footer .mediaLogo img{
     color: var(--tcolor2);
     font-size: large;
 }
+.info span{
+    font-weight: normal;
+}
 .info1 p, .info2 p{
+    font-weight: bold;
     text-align: center;
     padding: 2rem 6rem;
     margin: 2rem 6rem;
@@ -188,72 +195,84 @@ footer .mediaLogo img{
     text-align: center;
     padding: 2rem;
     margin: 2rem;
-    font-size: 2rem;
     color: var(--tcolor2);
-    font-weight: bold;
-
-}
+    }
 
 .moreInfo p{
+    font-weight: normal;
+    font-size: 1.8rem;
     padding: 2rem;
     margin: 2rem;
+}
+.moreInfo .p1{
+    font-weight: normal;
+    font-size: 1.6rem;
 }
 
 /* CSS for about page */
 .coffeePicTxt{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
     padding: 1rem;
     margin: 1rem;
+}
+.coffeeTxt{
+    text-align: left;
 }
 .coffeeTxt p{
     color: var(--tcolor2);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
     text-align:left;
-    padding: 2rem 0 1rem 3rem;
+    white-space: nowrap;
+    padding: 1rem 0 1rem 3rem;
     margin: 2rem 0 1rem 3rem;
+    
 }
 .coffeeTxt p:nth-child(1){
     word-spacing: 30px;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight:bolder;
 }
+.coffeeImg{
+    text-align: center;
+}
 .coffeeImg img{
-    height: 50rem;
-    width: 40rem;
-    padding-left: 8rem;
-    margin-left: 8rem;
+    height: 40rem;
+    width: 30rem;
+    padding-left: 4rem;
+    margin-left: 4rem;
 }
 .cafePicTxt{
     display: flex;
-    flex-wrap: wrap;
     padding: 1rem;
     margin: 1rem;
 }
-.cafePicTxt p{
+.cafeTxt p{
     color: var(--tcolor2);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: normal;
     text-align:left;
-    padding: 1rem 0 1rem 8rem;
-    margin: 1rem 0 1rem 8rem;
-   
+    white-space: nowrap;
+    padding: 1rem 0 1rem 4rem;
+    margin: 1rem 0 1rem 4rem;
+    
 }
 .cafeTxt p:nth-child(1){
     word-spacing: 30px;
     font-size: xx-large;
     font-weight:bolder;
 }
-.cafePicTxt img{
-    width: 40rem;
-    height: 45rem;
-    padding-left: 3rem;
+.cafePic img{
+    width: 35rem;
+    height: 40rem;
+    padding-left: 1rem 0 3rem 3rem;
     margin-left: 3rem;
 }
+
 /* CSS for contact page */
 .afterLogo{
-    text-align: center;
+    /* text-align: center; */
     padding:0 2rem;
     margin:0 20rem;
     color: var(--tcolor2);
@@ -262,6 +281,8 @@ footer .mediaLogo img{
 .afterLogo h2{
     font-weight: bold;
     font-size: 1.8rem;
+    white-space: nowrap;
+    text-align: center;
 }
 .afterLogo p{
     text-align: left;
@@ -269,6 +290,7 @@ footer .mediaLogo img{
     margin: 2rem;
     font-weight: medium;
     font-size: 1.5rem;
+    white-space: nowrap;
 }
 .afterLogo p:nth-of-type(1) span{
     font-weight: bold;
@@ -283,3 +305,81 @@ footer .mediaLogo img{
     width: 40rem;
     height: 30rem;
    }
+/*Media quries*/
+@media screen and (max-width: 768px) {
+    
+    p{
+        font-size: 0.875rem;
+    }
+    .threeCards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-bottom: 25px;
+        width: 60%;
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 900px){
+    nav{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    nav img{
+        display: none;
+    }
+    nav ul li{
+        font-size: 1rem;
+    }
+    /*Contact page*/
+    .afterLogo{
+        text-align: center;
+        padding: 0;
+       margin: 0;
+    }
+    .afterLogo h2,.afterLogo p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /*About page*/
+    .coffeePicTxt,.cafePicTxt{
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+         padding-bottom: 1rem;
+       margin-bottom: 1rem;
+    }
+    /*Index page*/
+    .info{
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+         padding-bottom: 1rem;
+       margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 650px){
+    nav ul li{
+        font-size: 1rem;
+       display:block;
+       padding: 0;
+       margin: 0;
+    }
+    /* nav{
+        text-align: center;
+        width: 100%;
+    } */
+    nav ul{
+         text-align: center;
+    }
+    .afterLogo{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .coffeePicTxt,.cafePicTxt{
+        font-size: 1.2rem;
+    }
+}
