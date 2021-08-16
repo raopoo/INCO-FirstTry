@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
@@ -13,14 +14,16 @@
 body{
     font-family: var(--ffam);
 }
-
+header{
+    width: 100%;
+}
 nav{
     background-color: var(--bcolor);
     color:var(--tcolor1);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     /* float:right; */
 }
 
@@ -53,7 +56,7 @@ nav ul li a{
       width: 10rem;
 }
 footer{
-    width: 100%;
+    width: 100vw;
     background-color: var(--bcolor);
     color: var(--tcolor1);
     clear:both;
@@ -62,7 +65,7 @@ footer{
 }
 .footerLogo{
     /* height: 5rem; */
-    width: 2.5rem;
+    width: 4rem;
     float:left;
     /* padding: 2rem 1rem 2rem 3rem; */
     padding: 1rem;
@@ -76,28 +79,28 @@ footer .mediaLogo{
     text-align: center;
 }
 footer .mediaLogo img{
-    width: 1.5rem;
+    width: 2rem;
     padding: 0.5rem;
     margin: 0.5rem;
 }
 /* CSS for Index */
 
-.cafePic{
+.cafePic1{
    color: var(--tcolor1);
    position: relative;
    text-align: center;
 }
-.cafePic img{
-    width: 70%;
+.cafePic1 img{
+    width: 90%;
    height: 60rem;
 }
 
-.cafePic .cafeName{
+.cafePic1 .cafeName{
   color: var(--tcolor1);
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   top: 20%;
-  /* left: 30%; */
+  left: 20%;
   transform: translateY(-50%);
   font-size: 3rem;
   font-weight: bold;
@@ -211,7 +214,7 @@ footer .mediaLogo img{
 
 /* CSS for about page */
 .coffeePicTxt{
-    display: inline-flex;
+    display: flex;
     /* flex-wrap: wrap; */
     padding: 1rem;
     margin: 1rem;
@@ -234,12 +237,12 @@ footer .mediaLogo img{
     font-size: x-large;
     font-weight:bolder;
 }
-.coffeeImg{
+/* .coffeeImg{
     text-align: center;
-}
+} */
 .coffeeImg img{
-    height: 40rem;
-    width: 30rem;
+    height: 45rem;
+    width: 40rem;
     padding-left: 4rem;
     margin-left: 4rem;
 }
@@ -263,7 +266,7 @@ footer .mediaLogo img{
     font-size: xx-large;
     font-weight:bolder;
 }
-.cafePic img{
+.cafePic2 img{
     width: 35rem;
     height: 40rem;
     padding-left: 1rem 0 3rem 3rem;
@@ -368,10 +371,10 @@ footer .mediaLogo img{
        padding: 0;
        margin: 0;
     }
-    /* nav{
-        text-align: center;
-        width: 100%;
-    } */
+    nav,footer{
+        /* text-align: center; */
+        /* width: 100vw; */
+    }
     nav ul{
          text-align: center;
     }
