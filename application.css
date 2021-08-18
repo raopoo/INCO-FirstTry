@@ -93,15 +93,15 @@ footer .mediaLogo img{
 }
 .cafePic1 img{
     width: 90%;
-   height: 60rem;
+   height: 60%;
 }
 
 .cafePic1 .cafeName{
   color: var(--tcolor1);
   position: absolute;
-  /* width: 100%; */
+  width: 80%;
   top: 20%;
-  left: 20%;
+  /* left: 10%; */
   transform: translateY(-50%);
   font-size: 3rem;
   font-weight: bold;
@@ -134,7 +134,7 @@ footer .mediaLogo img{
     width: 30%;
 }
 .threeCards .card img{
-    width: 100px;
+    width: 90%;
     margin-bottom: 15px;
 }
 .threeCards .card .p{
@@ -373,10 +373,6 @@ footer .mediaLogo img{
        display:block;
        padding: 0;
        margin: 0;
-    }
-    nav,footer{
-        /* text-align: center; */
-        /* width: 100vw; */
     }
     nav ul{
          text-align: center;
