@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px red solid; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
@@ -15,6 +16,7 @@
 body{
     font-family: var(--ffam);
     background-color: var(--bgPage);
+    width: 100%;
 }
 header{
     width: 100%;
