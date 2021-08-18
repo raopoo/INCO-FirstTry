@@ -7,6 +7,12 @@ let message = document.getElementById('message').value;
 let modal = document.getElementById("myModal");
 let closeBtn = document.getElementsByClassName('.closeBtn');
 
+//Expressions
+//email
+///^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/
+//name
+///^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/
+
 //Functions
 const formValidation = () => {
 
