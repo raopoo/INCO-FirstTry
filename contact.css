@@ -4,14 +4,14 @@
   padding: 2rem 0;
   margin: 1rem 0;
   color: white;
-}
+  }
 .formDiv h2{
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     color: #5C5B5B;
 }
-form {
+.contactUs{
    /* border: 5px solid black;  */
   padding: 1rem;
   margin: 1rem;
@@ -26,10 +26,9 @@ form input,textarea{
   background-color: #979797;
   color: white;
 }
-form label{
+label{
   padding: 0.5rem;
   margin: 0.5rem;
-  text-align: left;
   color: #5C5B5B;
 }
 form button{

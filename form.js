@@ -9,9 +9,9 @@ let closeBtn = document.getElementsByClassName('.closeBtn');
 
 //Expressions
 //email
-///^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/
+let eValid = /^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/;
 //name
-///^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/
+let nValid =/^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
 
 //Functions
 const formValidation = () => {
@@ -19,7 +19,6 @@ const formValidation = () => {
 }
 
 const displayMessage = () => {
-    //Use Modal
     modal.style.display = "block";
 }
 // When the user clicks anywhere outside of the modal, close it
@@ -29,13 +28,16 @@ window.onclick = function(event) {
   }
 }
 
-// closeBtn.addEventListener('click', function() {
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
 //   modal.style.display = "none";
-// });
+// }
 
-// Event Listener
+
 btn.addEventListener('click', function(){
     displayMessage();
     //formValidation();
 });
+
+
 
