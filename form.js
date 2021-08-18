@@ -5,7 +5,7 @@ let telNum = document.getElementById('tnum').value;
 let email = document.getElementById('email').value;
 let message = document.getElementById('message').value;
 let modal = document.getElementById("myModal");
-let closeBtn = document.getElementsByClassName('.closeBtn');
+let closeBtn = document.getElementById('closeBtn');
 
 //Expressions
 //email
@@ -28,10 +28,10 @@ window.onclick = function(event) {
   }
 }
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+//When the user clicks on close button, close the modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
 
 
 btn.addEventListener('click', function(){
