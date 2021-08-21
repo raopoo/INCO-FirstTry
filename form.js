@@ -1,9 +1,9 @@
 let btn = document.getElementById('btn');
-let firstName = document.getElementById('fname').value;
-let lastName = document.getElementById('lname').value;
-let telNum = document.getElementById('tnum').value;
-let email = document.getElementById('email').value;
-let message = document.getElementById('message').value;
+let firstName = document.getElementById('fname');
+let lastName = document.getElementById('lname');
+let telNum = document.getElementById('tnum');
+let email = document.getElementById('email');
+let message = document.getElementById('message');
 let modal = document.getElementById("myModal");
 let closeBtn = document.getElementById('closeBtn');
 let form = document.getElementById('contactUS');
@@ -17,16 +17,17 @@ let nValid =/^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
 form.setAttribute("nonvalidate", true)
 
 const formValidation = (event) => {
+   alert('submit was clicked');
    event.preventDefault();
 
   if(validInput(nValid, firstName) && 
   validInput(nValid, lastName) &&
   validInput(eValid, email)
   ){
-      console.log(`Name:${firstName} ${lastName}
-      Phone number:${telNum}
-      Email:${email}
-      Message:${message}`);
+      console.log(`Name:${firstName.value} ${lastName.value}
+      Phone number:${telNum.value}
+      Email:${email.value}
+      Message:${message.value}`);
       displayMessage();
   }else{
     console.log('Incorrect inputs, Please try again');
@@ -52,10 +53,7 @@ closeBtn.onclick = function() {
   form.reset();
 }
 
-
-btn.addEventListener('submit', function(){
-  formValidation(); 
-});
+btn.addEventListener('click',formValidation);
 
 
 
