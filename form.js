@@ -12,6 +12,7 @@ let form = document.getElementById('contactUS');
 
 let eValid = /^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/;
 let nValid =/^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
+let phValid = /^((\+61\s?)?(\((0|02|03|04|07|08)\))?)?\s?\d{1,4}\s?\d{1,4}\s?\d{0,4}$/
 
 //Functions
 form.setAttribute("nonvalidate", true)
@@ -23,14 +24,21 @@ const formValidation = (event) => {
   if(validInput(nValid, firstName) && 
   validInput(nValid, lastName) &&
   validInput(eValid, email)
-  ){
+  ){ 
+    if(telNum.value === ''){
+      console.log(`Name:${firstName.value} ${lastName.value}
+      Email:${email.value}
+      Message:${message.value}`);
+      displayMessage();
+    }else if(validInput(phValid, telNum)){
       console.log(`Name:${firstName.value} ${lastName.value}
       Phone number:${telNum.value}
       Email:${email.value}
       Message:${message.value}`);
       displayMessage();
-  }else{
-    console.log('Incorrect inputs, Please try again');
+    }else{
+        console.log('Incorrect inputs, Please try again');
+    }
   }
 }
 const validInput = (regex,input) => {
