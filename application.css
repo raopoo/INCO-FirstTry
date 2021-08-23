@@ -366,6 +366,10 @@ footer .mediaLogo img{
          padding-bottom: 1rem;
        margin-bottom: 1rem;
     }
+    .cafeName{
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 650px){
     nav ul li{
@@ -383,5 +387,10 @@ footer .mediaLogo img{
     }
     .coffeePicTxt,.cafePicTxt{
         font-size: 1.2rem;
+    }
+    .cafeName{
+        font-size: xx-small;
+        text-align: center;
+        height: auto;
     }
 }
