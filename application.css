@@ -90,24 +90,28 @@ footer .mediaLogo img{
    color: var(--tcolor1);
    position: relative;
    text-align: center;
+    width: 90%;
+    margin: 2rem;
 }
 .cafePic1 img{
-    width: 90%;
+    width: 100%;
    height: 60%;
+   /* position: absolute; */
+   /* padding: auto; */
 }
 
 .cafePic1 .cafeName{
   color: var(--tcolor1);
   position: absolute;
-  width: 80%;
+  /* width: 100%; */
   top: 20%;
-  /* left: 10%; */
-  transform: translateY(-50%);
+  left: 10%;
+  /* transform: translateY(-50%); */
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
  }
 .txtBfrCard{
     text-align: center;
@@ -122,7 +126,7 @@ footer .mediaLogo img{
     margin: 2rem;
     
 }
-.threeCards .card{
+.card{
     box-shadow: 0 0.5rem 0.5rem 0 darkgrey;
     background-color:var(--bcolor);
     color:var(--tcolor1);
@@ -171,8 +175,8 @@ footer .mediaLogo img{
 .open img{
     width: 5rem;
     height: 5rem;
-    padding: 0 3rem 2rem 6rem;
-    margin-bottom: 0 3rem 2rem 6rem;
+    /* padding: 0 3rem 2rem 6rem; */
+    /* margin-bottom: 0 3rem 2rem 6rem; */
 }
 .open p{
     padding-left: 1rem;
@@ -192,7 +196,7 @@ footer .mediaLogo img{
     font-weight: bold;
     text-align: center;
     padding: 2rem 6rem;
-    margin: 2rem 6rem;
+    /* margin: 2rem 6rem; */
     font-size:1.5rem;
 }
 .moreInfo{
@@ -216,25 +220,28 @@ footer .mediaLogo img{
 /* CSS for about page */
 .coffeePicTxt{
     display: flex;
+    justify-content: center;
+    align-items: center;
     /* flex-wrap: wrap; */
-    padding: 1rem;
-    margin: 1rem;
+    /* padding: 1rem;
+    margin: 1rem; */
 }
 .coffeeTxt{
-    text-align: left;
+    margin: 1rem;
 }
-.coffeeTxt p{
+ .coffeeTxt p{
     color: var(--tcolor2);
     font-size: 1.3rem;
     font-weight: normal;
-    text-align:left;
-    white-space: nowrap;
-    padding: 1rem 0 1rem 3rem;
-    margin: 2rem 0 1rem 3rem;
+    /* text-align:left; */
+    /* white-space: nowrap; */
+    padding: 1rem 0 1rem 1rem;
+
+    margin: 2rem 0.5rem 1rem 1rem;
     
-}
+}  
 .coffeeTxt p:nth-child(1){
-    word-spacing: 30px;
+    /* word-spacing: 30px; */
     font-size: x-large;
     font-weight:bolder;
 }
@@ -242,10 +249,9 @@ footer .mediaLogo img{
     text-align: center;
 } */
 .coffeeImg img{
-    height: 45rem;
-    width: 40rem;
-    padding-left: 4rem;
-    margin-left: 4rem;
+    /* height: 45rem;  */
+    width: 30rem;
+    margin-left: auto;
 }
 .cafePicTxt{
     display: flex;
@@ -257,7 +263,7 @@ footer .mediaLogo img{
     font-size: 1.3rem;
     font-weight: normal;
     text-align:left;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     padding: 1rem 0 1rem 4rem;
     margin: 1rem 0 1rem 4rem;
     
@@ -268,8 +274,8 @@ footer .mediaLogo img{
     font-weight:bolder;
 }
 .cafePic2 img{
-    width: 35rem;
-    height: 40rem;
+    width: 60%;
+    /* height: 40rem; */
     padding-left: 1rem 0 3rem 3rem;
     margin-left: 3rem;
 }
@@ -285,7 +291,7 @@ footer .mediaLogo img{
 .afterLogo h2{
     font-weight: bold;
     font-size: 1.8rem;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-align: center;
 }
 .afterLogo p{
@@ -294,7 +300,7 @@ footer .mediaLogo img{
     margin: 2rem;
     font-weight: medium;
     font-size: 1.5rem;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 .afterLogo p:nth-of-type(1) span{
     font-weight: bold;
@@ -352,11 +358,17 @@ footer .mediaLogo img{
     }
     /*About page*/
     .coffeePicTxt,.cafePicTxt{
-        display: block;
+       
         font-size: 1.5rem;
         text-align: center;
          padding-bottom: 1rem;
        margin-bottom: 1rem;
+    }
+    .coffeePicTxt{
+        flex-direction: column;
+    }
+    .cafePicTxt{
+        flex-direction: column-reverse;
     }
     /*Index page*/
     .info{
