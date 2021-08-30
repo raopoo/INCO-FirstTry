@@ -12,32 +12,42 @@ let form = document.getElementById('contactUS');
 
 let eValid = /^[A-Za-z0-9\._\-]+@[A-Za-z]+[A-Za-z0-9\-]+[A-Za-z]+(\.[A-Za-z0-9\-]+)+$/;
 let nValid =/^[A-Za-zÀ-ÖØ-öø-ÿ0-9 \.'\-]+$/;
-let phValid = /^((\+61\s?)?(\((0|02|03|04|07|08)\))?)?\s?\d{1,4}\s?\d{1,4}\s?\d{0,4}$/
+let phValid = /^((\+61\s?)?(\((0|02|03|04|07|08)\))?)?\s?\d{1,4}\s?\d{1,4}\s?\d{0,4}$/;
 
 //Functions
 form.setAttribute("nonvalidate", true)
 
 const formValidation = (event) => {
-   alert('submit was clicked');
-   event.preventDefault();
+  event.preventDefault();
+
+  if(!validInput(nValid, firstName)){
+    console.log('Please enter a valid first name');
+  }else if(!validInput(nValid, lastName)){
+    console.log('Please enter a valid last name');
+  }else if(!validInput(eValid, email)){
+    console.log('Please enter a valid email address');
+  }
 
   if(validInput(nValid, firstName) && 
   validInput(nValid, lastName) &&
   validInput(eValid, email)
   ){ 
-    if(telNum.value === ''){
+    if(message.value === ''){
+    console.log('Please leave a message');
+    }else if(telNum.value === ''){
       console.log(`Name:${firstName.value} ${lastName.value}
       Email:${email.value}
       Message:${message.value}`);
       displayMessage();
-    }else if(validInput(phValid, telNum)){
+    }else if(!validInput(phValid, telNum)){
+      console.log('Please enter a valid telephone number');
+    }
+    else{
       console.log(`Name:${firstName.value} ${lastName.value}
       Phone number:${telNum.value}
       Email:${email.value}
       Message:${message.value}`);
       displayMessage();
-    }else{
-        console.log('Incorrect inputs, Please try again');
     }
   }
 }
