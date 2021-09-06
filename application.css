@@ -11,9 +11,12 @@
     --bcolor: rgb(106,123,139);
     --tcolor1: white;
     --tcolor2: #5C5B5B;
+    --bgPage: #F2F2F2;
 }
 body{
     font-family: var(--ffam);
+    background-color: var(--bgPage);
+    width: 100%;
 }
 header{
     width: 100%;
@@ -260,6 +263,21 @@ footer .mediaLogo img{
 }
 
 /* CSS for contact page */
+/* .formDiv {
+  text-align: center;
+  display: block;
+}
+.formDiv h2{
+    text-align: center;
+}
+.formDiv form {
+   border: 5px solid black; 
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+ align-items: center;
+} */
+
 .afterLogo{
     /* text-align: center; */
     padding:0 2rem;

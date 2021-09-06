@@ -5,6 +5,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./application.css">
+   <link rel="stylesheet" href="./contact.css">
+   <script type="text/javascript" src="./form.js" defer></script>
    <title>Contact Page</title>
 </head>
 <body>
@@ -25,6 +27,47 @@
        <div class="mainLogo">
            <img src="./assets/logo_mrcoffee.png" alt="Mr Coffee logo-Size big">
        </div>
+       <!-- Form starts here  -->
+       <div class="formDiv">
+      <h2>Dites nous tout !</h2>
+      <form id="contactUS">
+         <label class="lab1" for="fname">Nom *</label><br>
+         <input type="text" id="fname" name="fname" required><br>
+
+         <label class="lab1" for="lname">Prénom *</label><br>
+         <input type="text" id="lname" name="lname" required><br>
+
+         <label class="lab1" for="tnum">Téléphone</label><br>
+         <input type="text" id="tnum" name="tnum"><br>
+
+         <label class="lab1" for="email">Adresse mail *</label><br>
+         <input type="text" id="email" name="email" required placeholder="Enter a valid email address"><br>
+
+         <label class="lab1" for="message">Message *</label><br>
+         <textarea type="text" id="message" name="message" required placeholder="Tapez votre message ici"></textarea> <br>
+
+         <button type="submit" id="btn">Submit</button>
+         
+      </form>
+   </div>
+       <!-- Form ends here -->
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+         <!-- Modal content -->
+         <div class="modal-content">
+           <div class="modalImg">
+              <img src="./assets/logo_dark.png" alt="Mr Coffee cafe logo">
+            </div>
+            <div class="modalTxt">
+            <p>MERCI</p>
+               <p>Votre message a bien été envoyé !</p>
+               <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+               <button id="closeBtn">FERMER</button>
+            </div>
+         </div>
+      
+      </div>
   <!-- Text after the logo -->
   <div class="afterLogo">
       <h2>On vous attend !</h2>
